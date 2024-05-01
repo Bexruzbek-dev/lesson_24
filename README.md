@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+<img src="assets/1.png" width="350" title="hover text">
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

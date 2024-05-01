@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             icon: Container(
               height: 20,
               width: 20,
-              child: Image.asset("assets/icons/back_icon.png"),
+              child: Image.asset("assets/rasmcha.jpeg"),
             ),
             style: IconButton.styleFrom(
                 backgroundColor: Color.fromARGB(255, 239, 236, 236)),
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               icon: Container(
                   height: 20,
                   width: 20,
-                  child: Image.asset("assets/icons/like.png")),
+                  child: Image.asset("assets/rasmcha.jpeg")),
               style: IconButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 239, 236, 236)),
             ),
@@ -63,7 +63,8 @@ class MainBody extends StatelessWidget {
             height: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(16),
-                color: const Color.fromARGB(255, 247, 230, 178)),
+                image:
+                    DecorationImage(image: AssetImage("assets/rasmcha.jpeg"))),
           ),
           const SizedBox(
             height: 20,
