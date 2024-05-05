@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/widgets.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(Page2());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
                 "https://avatars.githubusercontent.com/u/85279360?v=4",
                 fit: BoxFit.fill,
               ),
-              style: IconButton.styleFrom(backgroundColor: Colors.grey),
+              style: IconButton.styleFrom(backgroundColor: Colors.white),
             ),
             title: const Text("Hi, John Smith "),
             actions: [
@@ -68,8 +68,8 @@ class MainBody extends StatelessWidget {
                 Container(
                   height: 60,
                   width: 60,
-                  child: Image.network(
-                    "networks/icons/rocket.png",
+                  child: Image.asset(
+                    "assets/rocket.png",
                   ),
                 )
               ],
@@ -266,7 +266,8 @@ class MainBody extends StatelessWidget {
                                 builder: (context) => MainBody()));
                       },
                       icon: Course(
-                          image: "https://avatars.githubusercontent.com/u/85279360?v=4",
+                          image:
+                              "https://avatars.githubusercontent.com/u/85279360?v=4",
                           title: "Lerning Web Devolopmend",
                           lessons: "24 Lesson",
                           duration: "2Hr 30 Min")),
@@ -281,7 +282,8 @@ class MainBody extends StatelessWidget {
                                 builder: (context) => MainBody()));
                       },
                       icon: Course(
-                          image: "https://avatars.githubusercontent.com/u/85279360?v=4",
+                          image:
+                              "https://avatars.githubusercontent.com/u/85279360?v=4",
                           title: "Lerning Web Devolopmend",
                           lessons: "24 Lesson",
                           duration: "2Hr 30 Min")),

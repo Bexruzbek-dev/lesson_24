@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
           leading: IconButton(
             onPressed: () {},
             icon: Container(
-              height: 20,
-              width: 20,
-              child: Image.asset("assets/rasmcha.jpeg"),
+              height: 30,
+              width: 30,
+              child: Image.asset("assets/arrow_back.png"),
             ),
             style: IconButton.styleFrom(
                 backgroundColor: Color.fromARGB(255, 239, 236, 236)),
@@ -33,11 +33,9 @@ class MyApp extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: Container(
-                  height: 20,
-                  width: 20,
-                  child: Image.asset("assets/rasmcha.jpeg")),
-              style: IconButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 239, 236, 236)),
+                  height: 30,
+                  width: 30,
+                  child: Image.asset("assets/heart.png")),
             ),
             SizedBox(
               width: 10,
@@ -54,17 +52,67 @@ class MainBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 390,
+      width: 420,
       height: 700,
       padding: EdgeInsets.all(20),
       child: Column(
         children: <Widget>[
           Container(
-            height: 200,
+            height: 300,
+            width: double.infinity,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
-                image:
-                    DecorationImage(image: AssetImage("assets/rasmcha.jpeg"))),
+              borderRadius: BorderRadius.circular(16),
+              image: const DecorationImage(
+                image: AssetImage("assets/rasmcha.jpeg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Column(
+              children: [
+                const Spacer(),
+                Container(
+                  width: double.infinity,
+                  height: 110,
+                  padding: EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(16)),
+                  child: const Row(
+                    children: [
+                      Icon(Icons.shuffle),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Icon(
+                        Icons.skip_next,
+                        size: 30,
+                      ),
+                      SizedBox(
+                        width: 50,
+                      ),
+                      Icon(
+                        Icons.play_circle,
+                        size: 90,
+                      ),
+                      SizedBox(
+                        width: 50,
+                      ),
+                      Icon(
+                        Icons.skip_previous,
+                        size: 30,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Icon(
+                        Icons.fullscreen,
+                        size: 30,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
           const SizedBox(
             height: 20,
@@ -78,16 +126,20 @@ class MainBody extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.all(8),
+                  width: 180,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
                       color: Colors.indigo.shade200),
                   child: const Text(
-                    "Playlist",
+                    "Playlist(27)",
                     style: TextStyle(fontSize: 18),
                   ),
                 ),
                 Container(
+                  width: 200,
+                  alignment: Alignment.center,
                   padding: const EdgeInsets.all(8),
                   decoration:
                       BoxDecoration(borderRadius: BorderRadius.circular(12)),

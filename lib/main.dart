@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:lesson_24/screens/start_screen.dart';
+import 'package:lesson_24/app1/page2.dart';
 
 void main() {
   runApp(CourseApp());
